@@ -19,7 +19,7 @@ step 6: ls target/
 
 NOTE : pls run the maven commands where the pom.xml file is available.
 
-step 7: mvn clean ---> It will delete the target directory.
+step 7: mvn clean ---> It deletes the target directory which was created before.
 
 
 
@@ -32,14 +32,14 @@ ANS:
 
 
 
-IQ] where the maven default home dir?
+IQ] where is the maven default home directory?
 
   cd ~/.m2/repository/
 
   ls -lrth ---> you will see the dependecies.
 
 
-IQ] How to change the maven default dir?
+IQ] How to change the maven default directory?
 ANS:
    step 1: cd ~ ---> goto home dir
    step 2: create one custom dir --->   mkdir mavenlocalrepo
@@ -55,12 +55,13 @@ NOTE: Now you can run the mvn clean package : It will again downloading from cen
 
 
 IQ] Then what is the use of mvn clean install?
-ANS: It will store a package in maven local repo ---> /root/mavenlocalrepo/com/   Here it  	will store.
+ANS: It will store the artifact or the package created in maven local repository ---> /root/mavenlocalrepo/com/   Here it  	will store.
 
   mvn clean install  ---> It will create package into maven local repo and target dir.
 
 
 mvn clean deploy
+Maven copies/saves the artifactory or the generated package into the organisations private repository(Nexus or JFrog)
 
 
 b4devopshyd.pem
